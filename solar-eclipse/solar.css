@@ -1,0 +1,97 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed=parallax
+    scroll=normal*/
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url('https://images.unsplash.com/photo-1548097341-3d7b4821f984?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1793&q=80');
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url("https://images.unsplash.com/photo-1503526132061-1476196a59c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80");
+    min-height: 400px;
+}
+
+.pimg3 {
+    background-image: url('https://images.unsplash.com/photo-1503467262827-9c70e78ac329?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2054&q=80');
+    min-height: 400px;
+}
+
+.pimg4 {
+    background-image: url('https://images.unsplash.com/photo-1503416997304-7f8bf166c121?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80');
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 48px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+@media(max-width:568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        background-attachment: scroll;
+    }
+}
+
+.contact-us {
+    height: 100px;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(41, 37, 37);
+}
